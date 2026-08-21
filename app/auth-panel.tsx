@@ -170,7 +170,7 @@ export default function AuthPanel() {
   }
 
   return (
-    <section id="account" className="authPanel" aria-label="Account access">
+    <section id="account" className={`authPanel${userEmail ? " authSignedIn" : ""}`} aria-label="Account access">
       <div className="authIntro">
         <strong>Save your best work</strong>
         <span>
