@@ -179,8 +179,9 @@ export default function Home() {
               <span>gold.</span>
             </h1>
             <p>
-              WordSifter helps you turn rough writing into finished work by
-              comparing, scoring, rewriting, and keeping the strongest parts.
+              WordSifter helps songwriters turn rough lyrics and AI-generated
+              variations into finished songs by comparing, scoring, rewriting,
+              and keeping the strongest parts.
             </p>
             <div className="actions">
               <a className="gradient" href="#account">
@@ -232,8 +233,9 @@ export default function Home() {
             you create.
           </h2>
           <p>
-            Songs, scripts, stories, poems, copy, dialogue, captions, and more.
-            WordSifter fits any process.
+            Built for songwriters working across drafts, alternate lines, and
+            AI-music workflows. Keep the original, compare every variation,
+            and finish with confidence.
           </p>
           <a className="gradient" href="#account">
             Try WordSifter Free　→
@@ -247,6 +249,25 @@ export default function Home() {
               <p>{x[2]}</p>
             </article>
           ))}
+        </div>
+      </section>
+      <section className="pricing dark" id="pricing">
+        <p className="eye">SIMPLE PRODUCT ACCESS</p>
+        <h2>One workspace. No recurring software bill.</h2>
+        <div className="priceCard">
+          <div>
+            <span className="priceLabel">WORD SIFTER DESKTOP</span>
+            <strong className="price">$29.99</strong>
+            <span className="priceTerms">one-time purchase · Windows</span>
+          </div>
+          <ul>
+            <li>Review lyrics line by line</li>
+            <li>Compare and preserve alternate versions</li>
+            <li>Import, tag, format, and export Suno-ready work</li>
+            <li>Local analysis with optional AI providers</li>
+          </ul>
+          <p className="priceNote">Free beta access is available for 30 days. No card required during beta.</p>
+          <a className="gradient" href="#account">Start the free beta</a>
         </div>
       </section>
       <section className="reviews dark">
