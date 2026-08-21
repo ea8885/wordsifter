@@ -151,7 +151,6 @@ export default function Home() {
   const [newsletterMessage, setNewsletterMessage] = useState("");
   return (
     <main id="top">
-      <AuthPanel />
       <section className="hero dark">
         <header>
           <Logo />
@@ -280,6 +279,7 @@ export default function Home() {
           Start Sifting Free　→
         </a>
       </section>
+      <AuthPanel />
       <footer className="dark" id="resources">
         <div className="footBrand">
           <Logo />
