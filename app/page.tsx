@@ -174,9 +174,9 @@ export default function Home() {
         <div className="heroGrid">
           <div className="copy">
             <h1>
-              Find what
+              Find the
               <br />
-              <span>works.</span>
+              <span>gold.</span>
             </h1>
             <p>
               WordSifter helps you turn rough writing into finished work by
@@ -272,7 +272,7 @@ export default function Home() {
           <Logo />
         </span>
         <div>
-          <h2>Ready to find what works?</h2>
+          <h2>Ready to find the gold?</h2>
           <p>Start your first sift in seconds.</p>
         </div>
         <a className="gradient" href="#account">
@@ -283,7 +283,7 @@ export default function Home() {
       <footer className="dark" id="resources">
         <div className="footBrand">
           <Logo />
-          <small>Find what works.</small>
+          <small>Find the gold.</small>
           <p>●　◎　◉　♪</p>
         </div>
         {[
