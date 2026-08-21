@@ -1,0 +1,3 @@
+import type {Metadata} from "next";import "./globals.css";
+export const metadata:Metadata={title:"WordSifter — Find what works",description:"Compare, score, rewrite, and keep the strongest parts of anything you write.",openGraph:{title:"WordSifter — Find what works",description:"Refine every line. Keep your strongest work.",images:["/og.png"]},twitter:{card:"summary_large_image",title:"WordSifter — Find what works",description:"Refine every line. Keep your strongest work.",images:["/og.png"]}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
