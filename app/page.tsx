@@ -23,17 +23,10 @@ const steps = [
   ["⚑", "Finish", "Build your final piece with confidence."],
 ];
 const types = [
-  ["♫", "Songs & Lyrics", "Craft stronger lyrics and hooks.", "purple"],
-  ["▣", "Scripts & Screenplays", "Build sharper scenes and dialogue.", "blue"],
-  ["▤", "Stories & Novels", "Develop stronger chapters and prose.", "green"],
-  ["✎", "Poems & Spoken Word", "Shape rhythm, tone, and impact.", "orange"],
-  ["⚑", "Copy & Content", "Write clearer messaging that converts.", "red"],
-  [
-    "◌",
-    "Dialogue & Games",
-    "Create natural, believable conversations.",
-    "purple",
-  ],
+  ["♫", "Lyrics & hooks", "Shape stronger lines without losing the original.", "purple"],
+  ["◌", "AI variations", "Compare alternate wording side by side.", "blue"],
+  ["✓", "Review decisions", "Score, tag, and keep the version that earns its place.", "green"],
+  ["⚑", "Suno-ready output", "Format, tag, and export a draft ready for your next generation.", "orange"],
 ];
 function Demo() {
   const [pick, setPick] = useState(2);
@@ -201,11 +194,11 @@ export default function Home() {
       </section>
       <section className="creators" id="how">
         <div className="intro">
-          <p className="eye">MADE FOR EVERY CREATOR</p>
+          <p className="eye">MADE FOR SONGWRITERS</p>
           <h2>
-            Works the way
+            From rough draft
             <br />
-            you create.
+            to keeper lines.
           </h2>
           <p>
             Built for songwriters working across drafts, alternate lines, and
