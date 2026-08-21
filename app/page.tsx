@@ -35,26 +35,6 @@ const types = [
     "purple",
   ],
 ];
-const reviews = [
-  [
-    "WordSifter changed how I write. I can see what works, what doesn’t, and level up every time.",
-    "JM",
-    "Jake M.",
-    "Songwriter",
-  ],
-  [
-    "I ship better scripts faster. The sift score is like having an editor in the room.",
-    "SL",
-    "Sarah L.",
-    "Screenwriter",
-  ],
-  [
-    "Finally, a tool that helps me keep my best ideas and cut the rest. Total game changer.",
-    "MD",
-    "Marcus D.",
-    "Content Creator",
-  ],
-];
 function Demo() {
   const [pick, setPick] = useState(2);
   const lines = [
@@ -191,24 +171,19 @@ export default function Home() {
                 See It In Action　▷
               </a>
             </div>
-            <div className="trust">
-              <span>JM</span>
-              <span>SL</span>
-              <span>AK</span>
-              <span>MD</span> Trusted by creators, writers, and teams
-              <br />
-              　　in 120+ countries.
+            <div className="trust productProof">
+              <span>LOCAL-FIRST</span>
+              <span>WINDOWS</span>
+              <span>SUNO-READY</span>
             </div>
           </div>
           <Demo />
         </div>
-        <div className="brands">
-          <span>W Writers</span>
-          <span>♧ LyricLab</span>
-          <span>◉ Studio Ink</span>
-          <span>CC Create Co.</span>
-          <span>◉ Storyline</span>
-          <span>♢ VerseVault</span>
+        <div className="brands productProofBar">
+          <span>Protected original drafts</span>
+          <span>Independent line versions</span>
+          <span>Local analysis</span>
+          <span>Explicit export</span>
         </div>
       </section>
       <section className="process dark" id="features">
@@ -270,24 +245,6 @@ export default function Home() {
           <a className="gradient" href="#account">Start the free beta</a>
         </div>
       </section>
-      <section className="reviews dark">
-        <p className="eye">LOVED BY CREATORS</p>
-        <div className="reviewGrid">
-          {reviews.map((x, i) => (
-            <article key={x[2]}>
-              <b className={`q${i}`}>“</b>
-              <p>{x[0]}</p>
-              <div>
-                <span>{x[1]}</span>
-                <strong>
-                  {x[2]}
-                  <small>{x[3]}</small>
-                </strong>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
       <section className="cta" id="signup">
         <span className="bigmark">
           <Logo />
@@ -309,8 +266,7 @@ export default function Home() {
         </div>
         {[
           ["Product", "Features", "How It Works", "Pricing", "Download desktop beta"],
-          ["Resources", "Blog", "Help Center", "Templates", "Guides"],
-          ["Company", "About", "Careers", "Contact", "Privacy"],
+          ["Support", "Contact"],
         ].map((c) => (
           <div className="col" key={c[0]}>
             <b>{c[0]}</b>
@@ -318,7 +274,7 @@ export default function Home() {
               x === "Download desktop beta" ? (
                 <DesktopDownload key={x} />
               ) : (
-                <a href={x === "Features" ? "#features" : x === "How It Works" ? "#how" : x === "Resources" ? "#resources" : x === "Contact" ? "mailto:hello@wordsifter.app" : x === "Privacy" ? "/privacy" : "#account"} key={x}>
+                <a href={x === "Features" ? "#features" : x === "How It Works" ? "#how" : x === "Contact" ? "mailto:hello@wordsifter.app" : x === "Pricing" ? "#pricing" : "#account"} key={x}>
                   {x}
                 </a>
               )
