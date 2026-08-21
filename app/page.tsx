@@ -161,12 +161,6 @@ export default function Home() {
             <a href="#pricing">Pricing</a>
             <a href="#resources">Resources⌄</a>
           </nav>
-          <div className="account">
-            <a href="#account">Log in</a>
-            <a className="gradient" href="#account">
-              Try WordSifter Free
-            </a>
-          </div>
           <button
             className="hamb"
             type="button"
